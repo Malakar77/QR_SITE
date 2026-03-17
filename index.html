@@ -5,21 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	    <!-- ЗАПРЕТ ИНДЕКСАЦИИ -->
     <meta name="robots" content="noindex">
-	
+
     <title>Korston — Больше чем отель</title>
-    
+
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
-    
+
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css" />
+
     <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -47,7 +43,7 @@
                 <div class="flag-icon">
                     <img src="img/flag.svg" alt="Russia flag" id="currentFlag">
                 </div>
-                
+
                 <!-- Выпадающее меню со скруглением 20px -->
                 <div class="language-dropdown" id="languageDropdown">
                     <div class="language-option active" data-lang="ru">
@@ -90,13 +86,13 @@
     <!-- Первый блок карточек (отступ 50px от hero) -->
     <div class="cards-wrapper" id="cardsWrapper">
         <div class="cards-section" id="cardsSection">
-            <a href="roomservice/index.html" class="card-link">
+            <a href="roomservice.html" class="card-link">
                 <div class="card">
                     <img src="img/room_service.svg" alt="Card image" class="card-image">
                     <div class="card-text card-text-1">Рум сервис</div>
                 </div>
             </a>
-            <a href="service/index.html" class="card-link">
+            <a href="service.html" class="card-link">
                 <div class="card">
                     <img src="img/enabled.svg" alt="Card image" class="card-image">
                     <div class="card-text card-text-2">Включено в проживание</div>
@@ -248,20 +244,20 @@
         <div class="cashback-container">
             <h2 class="cashback-title cashback-title-ru">Больше эмоций, меньше затрат</h2>
             <h2 class="cashback-title cashback-title-en" style="display: none;">More emotions, less cost</h2>
-            
+
             <div class="cashback-highlight">
                 <span class="cashback-percent">до 10%</span>
                 <span class="cashback-word cashback-word-ru">КЭШБЭК</span>
                 <span class="cashback-word cashback-word-en" style="display: none;">CASHBACK</span>
             </div>
-            
+
             <p class="cashback-description cashback-description-ru">
                 Присоединяйтесь к программе лояльности и получайте выгоду с каждой покупки в Korston
             </p>
             <p class="cashback-description cashback-description-en" style="display: none;">
                 Join the loyalty program and benefit from every purchase at Korston
             </p>
-            
+
             <a href="https://korston.ru/app/" class="cashback-button cashback-button-ru" target="_blank" rel="noopener noreferrer">
                 Скачать Korston App
             </a>
@@ -322,12 +318,11 @@
             <p class="footer__copyright-text footer-copyright-en" style="display: none;">© 2026 Korston Club Hotel. All rights reserved.</p>
         </div>
     </footer>
-
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.js"></script>
+    <script type="module" src="node_modules/aos/dist/aos.js"></script>
     <script src="js/script.js"></script>
-	
+
 
 	<!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -347,6 +342,6 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/15855739" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-	
+
 </body>
 </html>

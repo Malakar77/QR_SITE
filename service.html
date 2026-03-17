@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <!-- ЗАПРЕТ ИНДЕКСАЦИИ -->
+    <meta name="robots" content="noindex">
+	
+    <title>Korston — В стоимость проживания включено</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/service.css">
+</head>
+<body>
+    <!-- ШАПКА: с логотипом и переключателем языка -->
+    <div class="glass-header">
+        <div class="location-block">
+            <div class="location-icon">
+                <img src="img/location.svg" alt="Location icon">
+            </div>
+            <span class="location-text">Казань</span>
+        </div>
+
+        <!-- Логотип по центру -->
+        <div class="logo-block">
+            <img src="img/logo.svg" alt="Korston logo" class="header-logo">
+        </div>
+
+        <div class="flag-block" id="languageSwitcher">
+            <div class="flag-icon">
+                <img src="img/flag.svg" alt="Russia flag" id="currentFlag">
+            </div>
+            
+            <!-- Выпадающее меню выбора языка -->
+            <div class="language-dropdown" id="languageDropdown">
+                <div class="language-option active" data-lang="ru">
+                    <img src="img/flag.svg" alt="Русский">
+                    <span>Русский</span>
+                </div>
+                <div class="language-option" data-lang="en">
+                    <img src="img/flag_eng.svg" alt="English">
+                    <span>English</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="main-content">
+        <!-- 1 БЛОК: Навигация назад -->
+        <div class="nav-back-block">
+            <a href="index.html" class="nav-back-link">
+                <img src="img/arrow_left.svg" alt="Назад" class="nav-back-arrow">
+                <span class="nav-back-text">Назад</span>
+            </a>
+        </div>
+
+        <!-- 2 БЛОК: В стоимость проживания включено -->
+        <div class="block-2">
+            <h2 class="block-title">В стоимость проживания включено:</h2>
+            
+            <ul class="marked-list">
+                <li>НДС (0%)</li>
+                <li>использование парковки</li>
+                <li>безлимитное использование Wi-Fi Интернета</li>
+                <li>посещение хамама, сауны, тренажерного зала.</li>
+                <li>бассейн для проживающих на 24 этаже и во всех номерах гостиницы «Корстон Роял»</li>
+                <li>глажение двух вещей в день - распространяется для проживающих на 24 этаже и во всех номерах гостиницы «Корстон Роял»</li>
+                <li>стоимость проживания всех категорий включает в себя завтрак на выбор в ресторане <a href="https://korston.ru/kazan/restaurants/shvedskiy-stol-le-buffet/" class="restaurant-link" target="_blank">«Ле буфет»</a> с 7.00 до 12.00 в формате шведский стол или завтрак в ресторане <a href="https://korston.ru/kazan/restaurants/extra-lounge/" class="restaurant-link" target="_blank">«Экстра Лаундж»</a> *с 12.00 до 15.00 в формате а-ля-карт, или завтрак в ресторане <a href="https://korston.ru/kazan/restaurants/u-soso/" class="restaurant-link" target="_blank">«У СоСо»</a>* с 11.00 до 12.00 в формате а-ля-карт (депозит 950 р. на каждого гостя и детей с 6 лет), кроме проживания по тарифу без завтрака.</li>
+            </ul>
+            
+            <p class="note-text">О возможности завтрака в формате а-ля-карт необходимо уточнять на ресепшен*.</p>
+            
+            <div class="image-wrapper">
+                <img src="img/service/photo_1.svg" alt="Ресторан" class="rounded-image" loading="lazy">
+            </div>
+        </div>
+
+        <!-- 3 БЛОК: Welcome drink и привилегии -->
+        <div class="block-3">
+            <ul class="marked-list">
+                <li>Приветственный коктейль (воспользуйтесь данным предложением до 7 утра следующего дня после заезда). (<a href="https://korston.ru/app/" class="app-link" target="_blank">Необходимо скачать приложение Korston app</a>).</li>
+                <li>Счастливые часы для гостей, проживающих в номерах, расположенных на 24 этаже гостиницы «Корстон Тауэр», и на 11 этаже гостиницы «Корстон Роял», и для гостей с картой Platinum (возможность посещения уточнить на ресепшен).</li>
+                <li>Шампанское на завтрак. <a href="https://korston.ru/app/" class="underline-link" target="_blank"> Необходимо скачать приложение Korston app.</a></li>
+            </ul>
+            
+            <div class="image-wrapper">
+                <img src="img/service/photo_2.svg" alt="Welcome drink" class="rounded-image" loading="lazy">
+            </div>
+        </div>
+
+        <!-- 4 БЛОК: Информация о расположении -->
+        <div class="block-4">
+            <p class="info-text">Фитнес-центр расположен на 12 этаже гостиницы «Корстон Роял». Время работы: 07:00 - 22:00</p>
+            <p class="info-text">Ресторан <a href="https://korston.ru/kazan/restaurants/shvedskiy-stol-le-buffet/" class="restaurant-link" target="_blank">«Ле буфет»</a> и ресторан <a href="https://korston.ru/kazan/restaurants/u-soso/" class="restaurant-link" target="_blank">«У СоСо»</a> расположены на 1 этаже;</p>
+            <p class="info-text">Ресторан <a href="https://korston.ru/kazan/restaurants/extra-lounge/" class="restaurant-link" target="_blank">«Экстра Лаундж»</a> расположен на 25 этаже в «Корстон Тауэр».</p>
+            <p class="info-text">Чтобы позвонить на ресепшен из номера, наберите цифру 1</p>
+            
+            <div class="image-wrapper">
+                <img src="img/service/photo_3.svg" alt="Фитнес-центр" class="rounded-image" loading="lazy">
+            </div>
+        </div>
+
+        <!-- 5 БЛОК: Приложение -->
+        <div class="block-5">
+            <p class="app-description">Чтобы сделать Ваше пребывание еще приятнее, скачайте наше приложение "KorstonApp" - в нем Вы найдете все необходимое для комфортного отдыха: актуальную информацию, услуги и специальные предложения.</p>
+            
+            <p class="app-cta-bold">Скачивайте приложение прямо сейчас и наслаждайтесь всеми преимуществами!</p>
+            
+            <a href="https://korston.ru/app/" class="app-button">Korston App</a>
+        </div>
+    </main>
+
+ <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Блок "Компания" -->
+            <div class="footer__column">
+                <h4 class="footer__title">Компания</h4>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><a href="https://korston.ru/about/contacts/" class="footer__link">Контакты</a></li>
+                    <li class="footer__menu-item"><a href="https://korston.ru/about/bank/" class="footer__link">Реквизиты</a></li>
+                    <li class="footer__menu-item"><a href="#" class="footer__link">Главная</a></li>
+                </ul>
+            </div>
+
+            <!-- Блок "Юридическая информация" -->
+            <div class="footer__column">
+                <h4 class="footer__title">Юридическая информация</h4>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><a href="https://korston.ru/about/docs/" class="footer__link">Документы</a></li>
+                    <li class="footer__menu-item"><a href="https://korston.ru/upload/docs/personal-data-policy.pdf" class="footer__link">Политика обработки персональных данных</a></li>
+                    <li class="footer__menu-item"><a href="https://korston.ru/upload/docs/privacy-policy.pdf" class="footer__link">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <p class="footer__copyright-text">© 2026 Korston Club Hotel. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/service.js"></script>
+    
+    <!-- Скрипт для отладки загрузки флагов (можно удалить после проверки команды на диджитал или проверки Даты) -->
+    <script>
+        window.addEventListener('load', function() {
+
+            const flagRu = new Image();
+            flagRu.src = 'img/flag.svg';
+            
+            const flagEn = new Image();
+            flagEn.src = 'img/flag_eng.svg';
+        });
+    </script>
+	
+	
+	
+	
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(12345678, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/15855739" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

@@ -22,8 +22,8 @@
     const CONFIG = {
         cardWidth: 252,
         cardsData: [
-            { url: 'roomservice/index.html', image: 'img/room_service.svg', text: 'Рум сервис', textEn: 'Room service' },
-            { url: 'service/index.html', image: 'img/enabled.svg', text: 'Включено в проживание', textEn: 'Included in stay' },
+            { url: 'roomservice.html', image: 'img/room_service.svg', text: 'Рум сервис', textEn: 'Room service' },
+            { url: 'service.html', image: 'img/enabled.svg', text: 'Включено в проживание', textEn: 'Included in stay' },
             { url: 'https://shop.hotbot.ai/korstonkazan', image: 'img/dop_in_room.svg', text: 'Дополнительный сервис', textEn: 'Service' }
         ]
     };
