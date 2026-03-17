@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <!-- ЗАПРЕТ ИНДЕКСАЦИИ -->
+    <meta name="robots" content="noindex">
+	
+    <title>Korston — Больше чем отель</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Hero секция с фоном -->
+    <div class="hero-section">
+        <!-- ШАПКА ПРОФИЛЯ с переключателем языка (поверх hero) -->
+        <div class="glass-header">
+            <!-- Блок с локацией -->
+            <div class="location-block">
+                <div class="location-icon">
+                    <img src="img/location.svg" alt="Location icon">
+                </div>
+                <span class="location-text">Казань</span>
+            </div>
+
+            <!-- Логотип по центру -->
+            <div class="logo-block">
+                <img src="img/logo.svg" alt="Korston logo" class="header-logo">
+            </div>
+
+            <!-- Переключатель языка -->
+            <div class="flag-block" id="languageSwitcher">
+                <div class="flag-icon">
+                    <img src="img/flag.svg" alt="Russia flag" id="currentFlag">
+                </div>
+                
+                <!-- Выпадающее меню со скруглением 20px -->
+                <div class="language-dropdown" id="languageDropdown">
+                    <div class="language-option active" data-lang="ru">
+                        <img src="img/flag.svg" alt="Русский">
+                        <span>Русский</span>
+                    </div>
+                    <div class="language-option" data-lang="en">
+                        <img src="img/flag_eng.svg" alt="English">
+                        <span>English</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="logo-section">
+                <div class="logo-container">
+                    <img src="img/logo.svg" alt="Korston logo">
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">Больше чем отель</h1>
+                <div class="subhead-line1">
+                    <span class="hero-text-1">Отдых • Бизнес •</span> <span class="brand-text hero-text-2">Эмоции</span>
+                </div>
+                <div class="subhead-line2 hero-text-3">в один клик</div>
+            </div>
+
+            <div class="scroll-section">
+                <div class="scroll-text scroll-text-ru">Покрутите вниз</div>
+                <div class="scroll-text scroll-text-en" style="display: none;">Scroll down</div>
+                <div class="arrow-image">
+                    <img src="img/arrow.svg" alt="Scroll down arrow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Первый блок карточек (отступ 50px от hero) -->
+    <div class="cards-wrapper" id="cardsWrapper">
+        <div class="cards-section" id="cardsSection">
+            <a href="roomservice/index.html" class="card-link">
+                <div class="card">
+                    <img src="img/room_service.svg" alt="Card image" class="card-image">
+                    <div class="card-text card-text-1">Рум сервис</div>
+                </div>
+            </a>
+            <a href="service/index.html" class="card-link">
+                <div class="card">
+                    <img src="img/enabled.svg" alt="Card image" class="card-image">
+                    <div class="card-text card-text-2">Включено в проживание</div>
+                </div>
+            </a>
+            <a href="https://shop.hotbot.ai/korstonkazan" class="card-link">
+                <div class="card">
+                    <img src="img/dop_in_room.svg" alt="Card image" class="card-image">
+                    <div class="card-text card-text-3">Дополнительный сервис</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- ВТОРОЙ БЛОК: Галерея сервисов (отступ 50px) -->
+    <div class="services-preview-wrapper">
+        <div class="swiper-container gallery-swiper">
+            <div class="swiper-wrapper">
+                <!-- Дубликаты последних слайдов для плавности в начале -->
+                <div class="swiper-slide service-preview">
+                    <a href="https://korston.ru/kazan/drinkmall/" class="service-preview__link" target="_blank" rel="noopener noreferrer">
+                        <div class="service-preview__wrapper">
+                                <img src="img/drinkmall.svg" alt="Дринк Молл" class="service-preview__img" loading="lazy">
+                            <div class="service-preview__content">
+                                <div class="service-preview__title service-preview__title-5">Дринк Молл</div>
+                                <div class="service-preview__title service-preview__title-5-en" style="display: none;">Drink Mall</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide service-preview">
+                    <a href="https://korston.ru/kazan/foodmall/" class="service-preview__link" target="_blank" rel="noopener noreferrer">
+                        <div class="service-preview__wrapper">
+                                <img src="img/foodmall.svg" alt="Фуд Молл" class="service-preview__img" loading="lazy">
+                                <div class="service-preview__content">
+                                    <div class="service-preview__title service-preview__title-4">Фуд Молл</div>
+                                    <div class="service-preview__title service-preview__title-4-en" style="display: none;">Food Mall</div>
+                                </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Оригинальные слайды -->
+                <div class="swiper-slide service-preview">
+                    <a href="https://korston.ru/kazan/afisha/" class="service-preview__link" target="_blank" rel="noopener noreferrer">
+                        <div class="service-preview__wrapper">
+                            <img src="img/afisha.svg" alt="Афиша" class="service-preview__img" loading="lazy">
+                            <div class="service-preview__content">
+                                <div class="service-preview__title service-preview__title-1">Афиша</div>
+                                <div class="service-preview__title service-preview__title-1-en" style="display: none;">Poster</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide service-preview">
+                    <a href="https://korston.ru/kazan/restaurants/" class="service-preview__link" target="_blank" rel="noopener noreferrer">
+                        <div class="service-preview__wrapper">
+                            <img src="img/restaurants.svg" alt="Рестораны" class="service-preview__img" loading="lazy">
+                            <div class="service-preview__content">
+                                <div class="service-preview__title service-preview__title-2">Рестораны</div>
+                                <div class="service-preview__title service-preview__title-2-en" style="display: none;">Restaurants</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide service-preview">
+                    <a href="https://cinema.korston.ru/kzn/" class="service-preview__link" target="_blank" rel="noopener noreferrer">
+                        <div class="service-preview__wrapper">
+                            <img src="img/kino.svg" alt="Кинотеатр" class="service-preview__img" loading="lazy">
+                            <div class="service-preview__content">
+                                <div class="service-preview__title service-preview__title-3">Кинотеатр</div>
+                                <div class="service-preview__title service-preview__title-3-en" style="display: none;">Cinema</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide service-preview">
+                    <a href="https://korston.ru/kazan/foodmall/" class="service-preview__link" target="_blank" rel="noopener noreferrer">
+                        <div class="service-preview__wrapper">
+                            <img src="img/foodmall.svg" alt="Фуд Молл" class="service-preview__img" loading="lazy">
+                            <div class="service-preview__content">
+                                <div class="service-preview__title service-preview__title-4">Фуд Молл</div>
+                                <div class="service-preview__title service-preview__title-4-en" style="display: none;">Food Mall</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide service-preview">
+                    <a href="https://korston.ru/kazan/drinkmall/" class="service-preview__link" target="_blank" rel="noopener noreferrer">
+                        <div class="service-preview__wrapper">
+                            <img src="img/drinkmall.svg" alt="Дринк Молл" class="service-preview__img" loading="lazy">
+                            <div class="service-preview__content">
+                                <div class="service-preview__title service-preview__title-5">Дринк Молл</div>
+                                <div class="service-preview__title service-preview__title-5-en" style="display: none;">Drink Mall</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Дубликаты первых слайдов для плавности в конце -->
+                <div class="swiper-slide service-preview">
+                    <a href="https://korston.ru/kazan/afisha/" class="service-preview__link" target="_blank" rel="noopener noreferrer">
+                        <div class="service-preview__wrapper">
+                            <img src="img/afisha.svg" alt="Афиша" class="service-preview__img" loading="lazy">
+                            <div class="service-preview__content">
+                                <div class="service-preview__title service-preview__title-1">Афиша</div>
+                                <div class="service-preview__title service-preview__title-1-en" style="display: none;">Poster</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide service-preview">
+                    <a href="https://korston.ru/kazan/restaurants/" class="service-preview__link" target="_blank" rel="noopener noreferrer">
+                        <div class="service-preview__wrapper">
+                            <img src="img/restaurants.svg" alt="Рестораны" class="service-preview__img" loading="lazy">
+                            <div class="service-preview__content">
+                                <div class="service-preview__title service-preview__title-2">Рестораны</div>
+                                <div class="service-preview__title service-preview__title-2-en" style="display: none;">Restaurants</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок "Оставить отзыв" (отступ 50px) -->
+    <div class="feedback-section">
+        <div class="feedback-container">
+            <a href="https://panel.getloyalty.io/vote/278183/7014" class="feedback-link" target="_blank" rel="noopener noreferrer">
+                <div class="feedback-image-wrapper">
+                    <img src="img/feedback.svg" alt="Оставить отзыв" class="feedback-image">
+                    <div class="feedback-overlay"></div>
+                    <div class="feedback-text feedback-text-ru">Оставить отзыв</div>
+                    <div class="feedback-text feedback-text-en" style="display: none;">Leave feedback</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- НОВЫЙ БЛОК: Кэшбэк (вместо программы лояльности, отступ 50px) -->
+    <div class="cashback-section">
+        <div class="cashback-container">
+            <h2 class="cashback-title cashback-title-ru">Больше эмоций, меньше затрат</h2>
+            <h2 class="cashback-title cashback-title-en" style="display: none;">More emotions, less cost</h2>
+            
+            <div class="cashback-highlight">
+                <span class="cashback-percent">до 10%</span>
+                <span class="cashback-word cashback-word-ru">КЭШБЭК</span>
+                <span class="cashback-word cashback-word-en" style="display: none;">CASHBACK</span>
+            </div>
+            
+            <p class="cashback-description cashback-description-ru">
+                Присоединяйтесь к программе лояльности и получайте выгоду с каждой покупки в Korston
+            </p>
+            <p class="cashback-description cashback-description-en" style="display: none;">
+                Join the loyalty program and benefit from every purchase at Korston
+            </p>
+            
+            <a href="https://korston.ru/app/" class="cashback-button cashback-button-ru" target="_blank" rel="noopener noreferrer">
+                Скачать Korston App
+            </a>
+            <a href="https://korston.ru/app/" class="cashback-button cashback-button-en" style="display: none;" target="_blank" rel="noopener noreferrer">
+                Download Korston App
+            </a>
+        </div>
+    </div>
+
+    <!-- Блок социальных сетей (отступ 50px) -->
+    <div class="social-section">
+        <div class="social-container">
+            <div class="social-wrapper">
+                <h2 class="social-title social-title-ru">Следите за актуальными новостями в наших социальных сетях</h2>
+                <h2 class="social-title social-title-en" style="display: none;">Follow the latest news on our social networks</h2>
+                <div class="social-icons">
+                    <a href="https://vk.com/korstonkazan" class="social-icon" target="_blank" rel="noopener noreferrer">
+                        <img src="img/vk.svg" alt="VK" class="social-icon__img">
+                    </a>
+                    <a href="https://t.me/korstonkzn" class="social-icon" target="_blank" rel="noopener noreferrer">
+                        <img src="img/tg.svg" alt="Telegram" class="social-icon__img">
+                    </a>
+                    <a href="https://www.tiktok.com/@korston.kazan" class="social-icon" target="_blank" rel="noopener noreferrer">
+                        <img src="img/tiktok.svg" alt="TikTok" class="social-icon__img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Блок "Компания" -->
+            <div class="footer__column">
+                <h4 class="footer__title">Компания</h4>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><a href="https://korston.ru/about/contacts/" class="footer__link">Контакты</a></li>
+                    <li class="footer__menu-item"><a href="https://korston.ru/about/bank/" class="footer__link">Реквизиты</a></li>
+                    <li class="footer__menu-item"><a href="/" class="footer__link">Главная</a></li>
+                </ul>
+            </div>
+
+            <!-- Блок "Юридическая информация" -->
+            <div class="footer__column">
+                <h4 class="footer__title">Юридическая информация</h4>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><a href="https://korston.ru/about/docs/" class="footer__link">Документы</a></li>
+                    <li class="footer__menu-item"><a href="https://korston.ru/upload/docs/personal-data-policy.pdf" class="footer__link">Политика обработки персональных данных</a></li>
+                    <li class="footer__menu-item"><a href="https://korston.ru/upload/docs/privacy-policy.pdf" class="footer__link">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Копирайт (ВНУТРИ футера) -->
+        <div class="footer__copyright">
+            <p class="footer__copyright-text footer-copyright-ru">© 2026 Korston Club Hotel. Все права защищены.</p>
+            <p class="footer__copyright-text footer-copyright-en" style="display: none;">© 2026 Korston Club Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+	
+
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(12345678, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/15855739" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+	
+</body>
+</html>
